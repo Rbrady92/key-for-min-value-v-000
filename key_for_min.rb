@@ -3,7 +3,7 @@
 
 def smallest_hash_value(name_hash)
   if name_hash.empty? {return nil}
-  min = Hash[*name_hash.first]
+  min = name_hash.values[0]
   min_key = nil
   name_hash.each do |key, value|
     if value < min
